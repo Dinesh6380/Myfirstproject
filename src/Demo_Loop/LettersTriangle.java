@@ -7,12 +7,12 @@ public class LettersTriangle {
 		int alpha = 65;
 		for(int i=0;i<=5;i++)
 		{
-			for(int j=0;j<=5;j++) {
+			for(int j=0;j<=i;j++) {
 				char a = (char)alpha;
-				System.out.println(" "+a+" ");
+				System.out.print(" "+a+" ");
 				alpha++;
 			}
-			
+			System.out.println(" ");
 			
 		}
 	}

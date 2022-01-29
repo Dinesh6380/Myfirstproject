@@ -32,10 +32,10 @@ public class SavingsAccount extends Bankaccount{
 			case 3 :obj.getBalance();
 				break;
 			case 4 :System.out.println("Enter amount to deposit");
-				obj.addInterest(obj.deposit(sc.nextDouble()));
+				obj.deposit(sc.nextDouble());
 				break;
 			case 5 :System.out.println("Enter amount to withdraw"); 
-				obj.addInterest(obj.withdraw(sc.nextDouble()));
+				obj.withdraw(sc.nextDouble());
 				break;
 			default : System.out.println("Press the number 1 to 5");
 				break;

@@ -21,15 +21,17 @@ public class Bankaccount {
 	{
 		System.out.println(Balance);
 	}
-	double deposit(double amount)
-	{
-		Balance = Balance + amount;
-		return Balance;
+	boolean deposit(double amount)
+	{	Balance = Balance + amount;
+		return true;
 	}
-	double withdraw(double amount)
+	boolean withdraw(double amount)
 	{
-		Balance = Balance - amount;
-		return Balance;
+		if(Balance>amount) {
+			Balance = Balance - amount;
+			return true;
+			}
+		return false;
 	}
 
 }
