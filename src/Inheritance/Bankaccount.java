@@ -3,7 +3,7 @@ package Inheritance;
 public class Bankaccount {
 	String accountName;
 	String accountNumber;
-	double Balance = 5000;
+	double  Balance = 5000;
 	public  Bankaccount(String accountName,String accountNumber)
 	{
 		this.accountName =accountName;
@@ -23,6 +23,7 @@ public class Bankaccount {
 	}
 	boolean deposit(double amount)
 	{	Balance = Balance + amount;
+		System.out.println(Balance);
 		return true;
 	}
 	boolean withdraw(double amount)
@@ -31,6 +32,9 @@ public class Bankaccount {
 			Balance = Balance - amount;
 			return true;
 			}
+		else {
+			System.out.println("your amount is low");
+		}
 		return false;
 	}
 
